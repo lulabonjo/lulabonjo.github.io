@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!-- COMIENZA EL CODIGO -->
+<body>
+    <!-- CABECERA DE LA PAGINA (HEADER) -->
+    <header>
+        <!-- BARRA DE NAVEGACION , METEMOS LISTAS NO ORDENADAS DENTRO -->
+        <nav>
+            <!-- UNORDENED LIST  -->
+            <h1> Lula Bonjo </h1>
+            <ul>
+                <!-- LIST ITEM  -->
+                <li> <a href="mailto:lmvallebona@gmail.com">MAIL</a></li>
+                <li> <a href="https://www.instagram.com/bonjolula">INSTAGRAM</a></li>
+                <li> <a href="https://twitch.tv/lulabonjo">TWITCH</a></li>
+                <li> <a href="https://api.whatsapp.com/send?phone=1126805441">WHATSAPP</a></li>
+            </ul>
+            
+    </header>
+    <!-- CUERPO DE LA PAGINA (MAIN)-->
+    <main>
+        <!-- Secciones -->
+        <section id="seccion2">
+            <h2><br>CV Artista</h2>
+            <div class="lista-projectos">
+
+                <div class="detalles-projectos">
+                    <img src="./imagenes/img2.png">
+                    <h3>EXPERIENCIA:</h3>
+                    <p> Trabajo de Artista de Cosplay desde el 2012. <br>
+                        El cosplay se define como Costume Play (jugar a disfrazarse)  <br>
+                        Es una disciplina artistica que incluye confeccion de vestuario, maquillaje, peluqueria y actuacion.  <br>
+                        Esta actividad me llevo a varios estudios distintos, ser contratada de muchos Eventos, exposiciones 
+                        y talleres nacionales e internacionales, tambien por distinta marcas. <br>
+                        Ser creadora de contenido en diferentes redes sociales, modelo e influencer. </p>
+                </div>
+          
+
+                <div class="detalles-projectos">
+                    <img src="./imagenes/img2.png">
+                    <h3>EVENTOS:</h3>
+                    <p> Contratada por Argentina Comic Con como artista nacional Artist Alley y jurado de concurso de cosplay  <br>
+                     Trabaje como artista y conduccion en sector de cosplay de Argentina Game Show >  <br>
+                     Embajadora de la marca Latinoamericana de perifericos RedragonAr   <br>
+                      representante internacional en Yamato Cosplay Cup, en brasil junto a 12 paises de todo America y Europa </p>  
+                </div>
+
+                <div class="detalles-projectos">
+                    <img src="./imagenes/img3.png">
+                    <h3>ESTUDIOS:</h3>
+                    <p> Corte y confeccion y Alta costura en acadamia Donato Delego <br>
+                    curso de bordado Donato delego <br>
+                Carrera de actuacion completa <br>
+            curso de maquillaje artistico y automaquillaje <br>
+        diseño grafico digital <br>
+    </p>
+                </div>
+
+                <div class="detalles-projectos">
+                    <img src="./imagenes/img1.png">
+                    <h3>SOBRE MI:</h3>
+                    <p> Ademas de dedicarme al cosplay tambien soy creadora de contenido en internet, <br>
+                    Streamer en la plataforma de twitch <br>
+                hago videos para Youtube y tik tok <br>
+            y modele para varias marcas principalmente de la cultura Geek y pop <br>
+        Soy fanatica del anime, comics, mangas, series y peliculas <br>
+    amo los videojuegos </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    
+
+    <div id="myCarousel" class="carousel">
+        <div class="carousel__slide"><img src="imagenes/ciri.jpg" width="60%"></div>
+        <div class="carousel__slide"><img src="imagenes/mikasa.jpeg"width=50%></div>
+        <div class="carousel__slide"><img src="imagenes/lola.jpg" width="50%"></div>
+    </div>
+    <script> 
+      const myCarousel = new Carousel(document.querySelector(".carousel"), {
+        slides: [
+            { html: "First slide" },
+            { html: "Second slide" },
+            { html: "Third slide" },
+            ],
+        });
+    </script>
+    <div class="videos">
+        <!-- Cargamos un video de un sitio externo. --> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QIZmM9zr1AI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VK2q1jer76o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    </div>
+
+    <section>
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required> <!-- tipo (contraseña , fecha , texto), nombre , placeholder (texto por defecto antes de escribir)-->
+    
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" placeholder="Apellido" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="E-mail" required>
+            
+            <label for="mje">Mensaje</label>
+            <textarea name="mje" placeholder="Dejanos tu mensaje" cols="30" rows="10"></textarea>
+            
+            <button type="submit" class="boton">Enviar</button>
+            <button type="reset" class="boton">Borrar</button>
+        </form>
+    </section>
+
+<body>
+
+<footer>
+        Derechos reservados
+    </footer>
+    
+</html>
